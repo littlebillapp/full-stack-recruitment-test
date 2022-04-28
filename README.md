@@ -14,13 +14,15 @@ You will be graded based on the following have been met:
 
 * Your solution looks like the provided [design](#design).
 
+* You have shown initiative on quality or functionality
+
 ----
 
 ## Prerequisites/Environment Setup
 
 ### Installing Node
 
-The full stack test is developed using Node, using the following versions:
+The full stack test is developed using Node. It's recommanded to use the following versions but be free to use recent version if it works.
 
   **Node:** `LTS/Erbium (^12.13.0)`
 
@@ -34,13 +36,34 @@ The full stack test has built-in support for these. Just run `nvm use` or `nave 
 
 ## Task
 
-We have placed a number of helpful todos inside the code (see `index.js` and `App.jsx`) to help get you started, the main items we are looking for are:
+We have placed a number of helpful todos inside the code (see `index.js` and `App.jsx`) to help get you started. We have several levels of goals. It is not necessary to go to the last level.
 
-- Fetch flight results from the provided `flights.json` and format them into client readable results.
-  - You are not required to serve this separately from the dev server (i.e. `npm start`).
+### Level 1: Display flights
+
+- Fetch flight results from the provided `flights.json` and format them into client readable results with fetch method or axio
 
 - Use the returned data to display a page of results that matches the given design.
   - Times should be displayed in 24 hour format.
+
+### Level 2: Add a front end filter
+
+- Add a way to select a price and filters results according to the price filter
+
+### Level 3: Create a server with filter
+
+- Create a little server with the techno of your choice (Node Express, flask, FastAPI, ...) which return `flights.json` content (move it to your new project)
+
+- Fetch flight from this server from now and not from the file as it was the case in level 1
+
+- Add a parameter to your server API to return itinerary with a lower price than the one requested
+
+### Level 4: Add TypeScript
+
+- Add TypeScript support
+
+### Level 5: Add tests
+
+- Add test for the files you have created
 
 ## Design
 
